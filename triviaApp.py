@@ -1,3 +1,9 @@
+
+#=============================================
+#importing libraries
+import csv
+import time
+#=============================================
 print("#######                             #                   ")
 print("   #    #####  # #    # #   ##     # #   #####  #####  ")
 print("   #    #    # # #    # #  #  #   #   #  #    # #    # ")
@@ -5,18 +11,21 @@ print("   #    #    # # #    # # #    # #     # #    # #    # ")
 print("   #    #####  # #    # # ###### ####### #####  #####  ")
 print("   #    #   #  #  #  #  # #    # #     # #      #      ")
 print("   #    #    # #   ##   # #    # #     # #      #   ")
-print("by TopSecret (Version 1.0)")
+time.sleep(1)
+print("Produced by:...")
+time.sleep(1)
+print("'TopSecret'")
+time.sleep(1)
+print("(Version 1.0.1)")
+time.sleep(1)
 
+#=====================================================
+print("\n\n\n\nWelcome to TriviaApp v1.0.1 by 'TopSecret'")
+print("This app pulls questions from questions.csv in triviaApp directory.")
+print("I hope you've loaded your CSV with lots of great trivia using the TriviaMaker App!  \nOr, you could go to our website and try one of our great loaded trivia CSVs!.")
+print("You can exit anytime by pressing ctrl+C.")
+time.sleep(8)
 
-print("\n\n\n\nWelcome to TriviaApp by TopSecret (Version 1.0).")
-print("This app pulls questions from questions.csv in this same folder.")
-print("You can exit anytime by typing 'exit' or by pressing ctrl+C.")
-
-#=============================================
-#importing libraries
-import csv
-
-#=============================================
 #creating scoreboard - score[0] == number of correct answers, score[1] == number of questions answered
 score = [0, 0]
 
@@ -42,6 +51,8 @@ with open('questions.csv', 'r') as questions:
         if answer == row[5]:
             score[0] += 1
         score[1] += 1
+        time.sleep(.5)
+        print("====================================")
     
 
     #csv file closes automatically with with() function
@@ -62,7 +73,9 @@ with open('questions.csv', 'r') as questions:
         print("#      ###### # #      ")
         print("#      #    # # #      ")
         print("#      #    # # ###### ")
+    time.sleep(2)
     print("\n\n\nYou scored " + str(grade) + "%\n\n\n" )
+    time.sleep(2)
 
 
         

@@ -1,3 +1,4 @@
+
 #Trivia Maker program
 #This program allows you to add questions into the questions.csv file
 #the questions.csv file feeds the trivia program with questions
@@ -12,6 +13,11 @@
 #it should be exited with the command "exit" or ctrl+c
 #This iteration probably will not contain any data sanatization, though any public version should
 
+#=============================================
+#importing libraries
+import csv
+import time
+
 #==============================================================================
 
 print("#######                             #     #                              ")
@@ -21,17 +27,25 @@ print("   #    #    # # #    # # #    #    #  #  # #    # ####   #####  #    # "
 print("   #    #####  # #    # # ######    #     # ###### #  #   #      #####  ")
 print("   #    #   #  #  #  #  # #    #    #     # #    # #   #  #      #   #  ")
 print("   #    #    # #   ##   # #    #    #     # #    # #    # ###### #    #")
-print("Version 1.0")
-print("by TopSecret\n\n\n")
+time.sleep(1)
+print("Produced by:...")
+time.sleep(1)
+print("'TopSecret'")
+time.sleep(1)
+print("(Version 1.0.1)")
+time.sleep(1)
+
+
 
 #=======================================================================
 #intro text
 
-print("Welcome to Trivia Maker by TopSecret (Version 1.0)\n\n")
-print("This program is designed to add questions into the CSV file that feeds Trivia by TopSecret")
-print("The format of the CSV is as follows:\nColumn1: Question\nColumn2 through Column5: Possible answers\nColumn6: Letter of correct answer")
+print("\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome to Trivia Maker by 'TopSecret' (Version 1.0.1)")
+print("This program is designed to add questions into the CSV file that feeds TriviaApp 1.0.1 by 'TopSecret'")
+print("The format of the CSV is as follows:\n\tColumn1: Question\n\tColumn2 through Column5: Possible answers\n\tColumn6: Letter of correct answer")
 print("Follow the prompts on the screen to add new questions to the CSV")
 print("To quit this program, type 'exit' as the field for the question or use ctrl+c")
+
 
 #=================================================
 
