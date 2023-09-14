@@ -12,4 +12,6 @@ I have also began using it for other things I am studying.  For each subject, I 
 
 If there is any questions about this app, or ideas on how to improve it, please message me.  This is my first real github push, so I would love to hear from the community about it!
 
-TopSecret
+newest release:  v1.0.1 - improves UI timing
+
+'TopSecret'
